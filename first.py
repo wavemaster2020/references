@@ -42,6 +42,7 @@ options = {0 : zero,
 }
 
 options[5]()
+# math operators: + - * / % ** (power) // (divide and floor)
 
 5**2
 
@@ -54,19 +55,28 @@ py.sqrt(8)
 
 '{:10}'.format('test')
 
-# lists
-
-fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
-print(fruits.index('apple'))
-fruits.sort()
-fruits.pop()
-fruits.append(3.14)
-print(fruits.index('apple'))
-
-for i in fruits:
-    print(i)
-
 squares = [x**2 for x in range(10)]
 
 [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+
+
+class Foo:
+    def __init__(self, val):
+        self.val = val
+    def printVal(self):
+        print(self.val)
+
+# This is a test for a class
+
+obj1 = Foo(1)
+
+obj1.printVal()
+
+# This is a test for a for loop
+
+for i in range (1, 10):
+    print(i); 
+    print(i);
+    
+   
 
